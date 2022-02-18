@@ -16,4 +16,11 @@
         android:layout_height="200dp"
         android:tag="fragment" />
 
+    <!-- tag 는 중복 되면 안된다. -->
+    <fragment
+        android:tag="아무말"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        class="com.jc.fragmentbasic_20220218.fragments.SecondFragment" />
+
 </LinearLayout>
