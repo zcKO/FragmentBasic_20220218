@@ -14,13 +14,20 @@
         class="com.jc.fragmentbasic_20220218.fragments.MyFirstFragment"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:tag="fragment" />
+        android:tag="firstFragment" />
 
     <!-- tag 는 중복 되면 안된다. -->
     <fragment
-        android:tag="아무말"
+        class="com.jc.fragmentbasic_20220218.fragments.SecondFragment"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        class="com.jc.fragmentbasic_20220218.fragments.SecondFragment" />
+        android:tag="secondFragment" />
+
+    <!--  ThirdFragment 만들어서 배치, 세로 300dp  -->
+    <fragment
+        android:tag="thirdFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        class="com.jc.fragmentbasic_20220218.fragments.FragmentThird"/>
 
 </LinearLayout>

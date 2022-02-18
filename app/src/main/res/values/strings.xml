@@ -4,4 +4,6 @@
     <string name="first_fragment">첫 번째 프래그먼트</string>
     <string name="second_fragment">여기는 두 번째 프레그먼트</string>
     <string name="show_toast">토스트 띄우기</string>
+    <string name="third_fragment">3 번째 프래그먼트</string>
+    <string name="test_button">테스트 버튼</string>
 </resources>
