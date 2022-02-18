@@ -2,4 +2,6 @@
     <string name="app_name">FragmentBasic_20220218</string>
     <string name="print_log">로그 찍기</string>
     <string name="first_fragment">첫 번째 프래그먼트</string>
+    <string name="second_fragment">여기는 두 번째 프레그먼트</string>
+    <string name="show_toast">토스트 띄우기</string>
 </resources>
