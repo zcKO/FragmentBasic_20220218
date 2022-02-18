@@ -7,27 +7,43 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!-- 사용하려면 tag 또는 id 를 작성해야 한다.
-            android:id="@+id/firstFragment"
-    -->
-    <fragment
-        class="com.jc.fragmentbasic_20220218.fragments.MyFirstFragment"
+    <!-- ScrollView 는 하나의 자식만 가질 수 있다. -->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:tag="firstFragment" />
+        android:layout_height="match_parent">
 
-    <!-- tag 는 중복 되면 안된다. -->
-    <fragment
-        class="com.jc.fragmentbasic_20220218.fragments.SecondFragment"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:tag="secondFragment" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <!--  ThirdFragment 만들어서 배치, 세로 300dp  -->
-    <fragment
-        android:tag="thirdFragment"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        class="com.jc.fragmentbasic_20220218.fragments.FragmentThird"/>
+            <!--
+                 사용하려면 tag 또는 id 를 작성해야 한다.
+                 android:id="@+id/firstFragment"
+            -->
+            <fragment
+                class="com.jc.fragmentbasic_20220218.fragments.MyFirstFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:tag="firstFragment" />
+
+            <!-- tag 는 중복 되면 안된다. -->
+            <fragment
+                class="com.jc.fragmentbasic_20220218.fragments.SecondFragment"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:tag="secondFragment" />
+
+            <!--  ThirdFragment 만들어서 배치, 세로 300dp  -->
+            <fragment
+                class="com.jc.fragmentbasic_20220218.fragments.FragmentThird"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:tag="thirdFragment" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
